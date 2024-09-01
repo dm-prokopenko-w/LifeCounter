@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 using static Game.Constants;
@@ -12,6 +11,7 @@ namespace Game.UI
 
 		private Dictionary<string, PopupView> _popups = new Dictionary<string, PopupView>();
 		private string _currentPopup = "";
+		
 		public void Start()
 		{
 			_uiController.SetAction(OpenPopup, (string id) => ActivePopup(id, true));
@@ -20,7 +20,7 @@ namespace Game.UI
 
 		public void AddPopupView(string id, PopupView popupView) => _popups.Add(id, popupView);
 
-		private void ActivePopup(string id, bool value)
+		public void ActivePopup(string id, bool value)
 		{
 			if (value)
 			{
@@ -36,7 +36,6 @@ namespace Game.UI
 			{
 				blackout.GetAnimator().Play(keyName);
 			}
-			Debug.Log(keyName);
 		}
 	}
 }

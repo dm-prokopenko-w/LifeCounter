@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 namespace Game
 {
 	public static class Constants
@@ -25,6 +21,7 @@ namespace Game
 		public const string ConfigsPath = "Configs/";
 
 		public const string LivesConfig = "LivesConfig";
+		public const string DailyBonusConfig = "DailyBonusConfig";
 
 		public const string OpenPopup = "OpenPopupBtn";
 		public const string ClosePopup = "ClosePopupBtn";

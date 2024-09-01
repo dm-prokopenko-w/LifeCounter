@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1487f5d688e4f94f828f879d599dbdc, type: 3}
-  m_Name: Built In Data_PlayerDataGroupSchema
+  m_Script: {fileID: 11500000, guid: 544338b2242d21f4b853bc62608ebcd8, type: 3}
+  m_Name: DailyBonusConfig
   m_EditorClassIdentifier: 
-  m_Group: {fileID: 11400000, guid: 53d7f884bbfcadb438134671d1da64df, type: 2}
-  m_IncludeResourcesFolders: 1
-  m_IncludeBuildSettingsScenes: 1
+  Id: DailyBonusConfig
+  CountCoinInFirstDay: 2
+  CountCoinInSecondDay: 3
+  PercentageBeyondPreviousDay: 100
+  PercentagePreviousDay: 60

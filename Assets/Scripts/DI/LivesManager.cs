@@ -29,9 +29,10 @@ namespace Game
 		private int _countLives = 0;
 		private int _maxCountLives;
 
-		public async void Start()
+		public void Start()
 		{
-			LivesConfig data = await _assetLoader.LoadConfig(Constants.LivesConfig) as LivesConfig;
+			LivesConfig data = _assetLoader.LoadConfig(Constants.LivesConfig) as LivesConfig;
+
 			_updateSec = data.SecondToAddLife + data.MinuteToAddLife * 60;
 			_maxCountLives = data.MaxLives;
 			_startSecond = data.SecondToAddLife;
@@ -42,6 +43,8 @@ namespace Game
 
 			_uiController.SetAction(AddOneLive, RefillLifves);
 			_uiController.SetAction(RemoveOneLive, UseOneLife);
+
+			ActiveLivesType();
 		}
 
 		public void Tick()

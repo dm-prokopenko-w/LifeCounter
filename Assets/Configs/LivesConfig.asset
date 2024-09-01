@@ -14,6 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: LivesConfig
   MaxLives: 5
-  MinuteToAddLife: 1
-  SecondToAddLife: 5
-  IsCurrentDay: 1
+  MinuteToAddLife: 0
+  SecondToAddLife: 20
